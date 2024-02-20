@@ -1,12 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-export default function 
-() {
+ function ForgotPassword() {
   return (
-    <>
-        <div className=''>
+    <div>
 
-        </div>
-    </>
+    </div>
   )
 }
+export default ForgotPassword;
