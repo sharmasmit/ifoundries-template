@@ -1,5 +1,6 @@
 import './App.css';
 import ForgotPassword from './components/ForgotPassword';
+import VerifyEmail from './components/VerifyEmail';
 
 function App() {
   return (

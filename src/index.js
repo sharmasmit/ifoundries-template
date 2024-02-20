@@ -8,6 +8,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import VerifyEmail from './components/VerifyEmail';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <NotFound/>
   },
+  {
+    path:"/VerifyEmail",
+    element: <VerifyEmail/>
+  }
 ]);
 
 root.render(
