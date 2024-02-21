@@ -65,22 +65,23 @@ button{
   margin-right: 7.5rem;
 }
 
-.varify-Email, .create-pass, .reset-popup{
+.varify-Email, .create-pass, .reset-popup, .deleteProject{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #F0F0F0;
   padding: 15.938rem 33.75rem;
 }
-.verifyEmail-box, .create-pass-box, .reset-popup-box{
+.verifyEmail-box, .create-pass-box, .reset-popup-box, .deleteProject-box{
   text-align: center;
   padding: 7.5rem 6.25rem;
   background-color: #FFFFFF;
   text-align: center;
+  border-radius: 0.625rem;
   /* width: 100%; */
 }
 
-.resendBtn{
+.resendBtn, .noBtn{
   background-color: #FDE9E9;
   color: #E72F27;
 }
@@ -110,7 +111,7 @@ button{
   padding-right: 5.938rem;
 }
 
-.reset-popup-box button{
+.reset-popup-box button, .deleteProject-box button{
   margin-top: 3.125rem;
 }
 span{
@@ -123,4 +124,8 @@ span{
   text-decoration: underline;
   font-style: italic;
   font-size: 0.938rem;
+}
+.deleteProject{
+  background: #000000;
+  opacity: 0.7;
 }

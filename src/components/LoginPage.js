@@ -2,7 +2,7 @@ import React from "react";
 import LogoImage from "./LogoImage";
 import { Link } from "react-router-dom";
 
-export default function LoginPage() {
+function LoginPage() {
   return (
     <>
       <div className="loginPage">
@@ -28,3 +28,4 @@ export default function LoginPage() {
     </>
   );
 }
+export default LoginPage;

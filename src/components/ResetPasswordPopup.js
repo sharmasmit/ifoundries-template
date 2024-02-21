@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ResetPasswordPopup() {
+function ResetPasswordPopup() {
   return (
     <>
       <div className="reset-popup">
@@ -12,3 +12,4 @@ export default function ResetPasswordPopup() {
     </>
   );
 }
+export default ResetPasswordPopup;
