@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import VerifyEmail from './components/VerifyEmail';
 import CreateNewPassword from './components/CreateNewPassword';
+import ResetPasswordPopup from './components/ResetPasswordPopup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/CreateNewPassword",
     element: <CreateNewPassword/>
+  },
+  {
+    path: "/ResetPasswordPopup",
+    element: <ResetPasswordPopup/>
   }
 ]);
 
