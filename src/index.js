@@ -8,7 +8,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import VerifyEmail from "./components/VerifyEmail";
 import CreateNewPassword from "./components/CreateNewPassword";
 import ResetPasswordPopup from "./components/ResetPasswordPopup";
-import LoginSignupPage from "./components/LoginSignupPage";
+import LoginPage from "./components/LoginPage";
+import ForgotPassword from "./components/ForgotPassword";
+import SignupPage from "./components/SignupPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -31,9 +33,17 @@ const router = createBrowserRouter([
     element: <ResetPasswordPopup />,
   },
   {
-    path: "/LoginSignupPage",
-    element: <LoginSignupPage />,
+    path: "/ForgotPassword",
+    element: <ForgotPassword/>
   },
+  {
+    path: "/LoginPage",
+    element: <LoginPage />,
+  },
+  {
+    path: "/SignupPage",
+    element: <SignupPage/>
+  }
 ]);
 
 root.render(

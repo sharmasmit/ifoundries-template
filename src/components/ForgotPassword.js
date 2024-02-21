@@ -15,8 +15,7 @@ function ForgotPassword() {
               Enter your email (that you use to create your
               <br /> account) to receive a Verification Code.
             </h2>
-            <input type="text" placeholder="youremail@gmail.com" />
-            {/*<FontAwesomeIcon icon={faEnvelope} />*/} <br />
+            <input type="email" placeholder="youremail@gmail.com" /><br />
             <button type="submit">Continue</button>
           </form>
         </div>

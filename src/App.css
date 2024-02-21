@@ -39,12 +39,12 @@ button{
   border: none;
   margin: 0 0.938rem;
 }
-.forgot-page, .loginSignup{
+.forgot-page, .loginPage, .signupPage{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.forgot-box, .loginSignup-box{
+.forgot-box, .login-box, .signup-box{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,15 +92,16 @@ button{
   width: 4.688rem;
   height: 4.688rem;
   margin: 3.125rem 0.625rem;
+  box-sizing: border-box;
 }
 
-.create-pass-box input, .loginSignup-box input{
+.create-pass-box input, .login-box input, .signup-box input{
   margin: 0.938rem 0;
 }
-.create-pass-box h2, .loginSignup-box h2{
+.create-pass-box h2, .login-box h2, .signup-box h2{
   padding-bottom: 2.188rem;
 }
-.create-pass-box button, .loginSignup-box button{
+.create-pass-box button, .login-box button , .signup-box button{
   margin-top:  2.188rem;
 }
 
@@ -114,4 +115,12 @@ button{
 }
 span{
   color: #E72F27;
+}
+
+.forgotLink{
+  color: #E72F27;
+  font-family: "Noto Sans";
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 0.938rem;
 }
