@@ -39,12 +39,12 @@ button{
   border: none;
   margin: 0 0.938rem;
 }
-.forgot-page{
+.forgot-page, .loginSignup{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.forgot-box{
+.forgot-box, .loginSignup-box{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,13 +94,13 @@ button{
   margin: 3.125rem 0.625rem;
 }
 
-.create-pass-box input{
+.create-pass-box input, .loginSignup-box input{
   margin: 0.938rem 0;
 }
-.create-pass-box h2{
+.create-pass-box h2, .loginSignup-box h2{
   padding-bottom: 2.188rem;
 }
-.create-pass-box button{
+.create-pass-box button, .loginSignup-box button{
   margin-top:  2.188rem;
 }
 
@@ -111,4 +111,7 @@ button{
 
 .reset-popup-box button{
   margin-top: 3.125rem;
+}
+span{
+  color: #E72F27;
 }

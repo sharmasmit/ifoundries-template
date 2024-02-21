@@ -1,37 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import NotFound from './components/NotFound'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import VerifyEmail from './components/VerifyEmail';
-import CreateNewPassword from './components/CreateNewPassword';
-import ResetPasswordPopup from './components/ResetPasswordPopup';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import NotFound from "./components/NotFound";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import VerifyEmail from "./components/VerifyEmail";
+import CreateNewPassword from "./components/CreateNewPassword";
+import ResetPasswordPopup from "./components/ResetPasswordPopup";
+import LoginSignupPage from "./components/LoginSignupPage";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <NotFound/>
+    errorElement: <NotFound />,
   },
   {
-    path:"/VerifyEmail",
-    element: <VerifyEmail/>
+    path: "/VerifyEmail",
+    element: <VerifyEmail />,
   },
   {
     path: "/CreateNewPassword",
-    element: <CreateNewPassword/>
+    element: <CreateNewPassword />,
   },
   {
     path: "/ResetPasswordPopup",
-    element: <ResetPasswordPopup/>
-  }
+    element: <ResetPasswordPopup />,
+  },
+  {
+    path: "/LoginSignupPage",
+    element: <LoginSignupPage />,
+  },
 ]);
 
 root.render(
