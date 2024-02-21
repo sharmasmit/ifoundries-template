@@ -65,23 +65,20 @@ button{
   margin-right: 7.5rem;
 }
 
-.varify-Email{
+.varify-Email, .create-pass{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #F0F0F0;
   padding: 15.938rem 33.75rem;
 }
-.verifyEmail-box{
+.verifyEmail-box, .create-pass-box{
   text-align: center;
   padding: 7.5rem 6.25rem;
   background-color: #FFFFFF;
   text-align: center;
-  /* width: 100%; */
 }
 
-form{
-}
 .resendBtn{
   background-color: #FDE9E9;
   color: #E72F27;
@@ -94,4 +91,14 @@ form{
   width: 4.688rem;
   height: 4.688rem;
   margin: 3.125rem 0.625rem;
+}
+
+.create-pass-box input{
+  margin: 0.938rem 0;
+}
+.create-pass-box h2{
+  padding-bottom: 2.188rem;
+}
+.create-pass-box button{
+  margin-top:  2.188rem;
 }

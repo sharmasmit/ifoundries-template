@@ -9,6 +9,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import VerifyEmail from './components/VerifyEmail';
+import CreateNewPassword from './components/CreateNewPassword';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path:"/VerifyEmail",
     element: <VerifyEmail/>
+  },
+  {
+    path: "/CreateNewPassword",
+    element: <CreateNewPassword/>
   }
 ]);
 
