@@ -60,7 +60,7 @@ function SignupPage() {
             <h1>
               Login / <span>Sign Up</span>
             </h1>
-            <h2>Welcome back, please log in.</h2>
+            <h3>Welcome back, please log in.</h3>
             <input type="text" placeholder="Your name" id="fullName" />
             <br />
             <input

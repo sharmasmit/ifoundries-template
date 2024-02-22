@@ -12,7 +12,7 @@ function LoginPage() {
             <h1>
               <span>Login</span> / Sign Up
             </h1>
-            <h2>Welcome back, please log in.</h2>
+            <h3>Welcome back, please log in.</h3>
             <input type="email" placeholder="Youremail@gmail.com" />
             <br />
             <input type="password" placeholder="Enter your password" style={{marginBottom: '1.25rem'}} />

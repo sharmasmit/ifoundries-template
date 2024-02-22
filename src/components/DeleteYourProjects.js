@@ -10,7 +10,7 @@ function DeleteYourProjects() {
             <h1 style={{ paddingTop: "1.25rem" }}>
               Are you sure you want to delete your projects?
             </h1>
-            <h2>You will not be able to recover them afterwards</h2>
+            <h3>You will not be able to recover them afterwards</h3>
             <button type="submit" className="noBtn">
               No
             </button>

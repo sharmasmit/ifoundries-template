@@ -20,10 +20,10 @@ function ForgotPassword() {
         <div className="forgot-box">
           <form onSubmit={showEmail}>
             <h1>Forgot Password?</h1>
-            <h2>
+            <h3>
               Enter your email (that you use to create your
               <br /> account) to receive a Verification Code.
-            </h2>
+            </h3>
             <input type="email" placeholder="youremail@gmail.com" />
             <br />
             <button type="submit">Continue</button>

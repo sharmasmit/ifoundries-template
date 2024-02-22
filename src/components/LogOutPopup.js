@@ -8,7 +8,7 @@ function LogOutPopup() {
           <form>
             <img src={require("../images/TrashBox.png")} alt="TrashBox" />
             <h1 style={{ paddingTop: "1.25rem" }}>Log Out</h1>
-            <h2>Are you sure you want to leave?</h2>
+            <h3>Are you sure you want to leave?</h3>
             <button type="submit" className="noBtn">
               No
             </button>

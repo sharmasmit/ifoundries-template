@@ -24,7 +24,7 @@ function VerifyEmail() {
         <div className="verifyEmail-box">
           <form onSubmit={EmailVarifyOTP}>
             <h1>Verify your email</h1>
-            <h2>Please enter the number code sent to your email address.</h2>
+            <h3>Please enter the number code sent to your email address.</h3>
             <input type="text" maxLength={1} id="first" />
             <input type="text" maxLength={1} id="sec" />
             <input type="text" maxLength={1} id="third" />

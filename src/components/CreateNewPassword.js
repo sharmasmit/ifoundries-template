@@ -35,10 +35,10 @@ function CreateNewPassword() {
         <div className="create-pass-box">
           <form onSubmit={CreatePassword}>
             <h1>Create New Password</h1>
-            <h2>
+            <h3>
               Your new password must be different from your previous <br /> used
               password. Minimum 6 characters
-            </h2>
+            </h3>
             <input
               type="password"
               placeholder="Enter your password"
