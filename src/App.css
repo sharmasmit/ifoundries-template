@@ -38,6 +38,7 @@ button{
   color: #FFFFFF;
   border: none;
   margin: 0 0.938rem;
+  cursor: pointer;
 }
 .forgot-page, .loginPage, .signupPage{
   display: flex;
@@ -65,20 +66,20 @@ button{
   margin-right: 7.5rem;
 }
 
-.varify-Email, .create-pass, .reset-popup, .deleteProject{
+.varify-Email, .create-pass, .reset-popup, .deleteProject, .logOutPopup{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #F0F0F0;
   padding: 15.938rem 33.75rem;
 }
-.verifyEmail-box, .create-pass-box, .reset-popup-box, .deleteProject-box{
+
+.verifyEmail-box, .create-pass-box, .reset-popup-box, .deleteProject-box, .logOutPopup-box{
   text-align: center;
   padding: 7.5rem 6.25rem;
   background-color: #FFFFFF;
   text-align: center;
   border-radius: 0.625rem;
-  /* width: 100%; */
 }
 
 .resendBtn, .noBtn{
@@ -111,7 +112,7 @@ button{
   padding-right: 5.938rem;
 }
 
-.reset-popup-box button, .deleteProject-box button{
+.reset-popup-box button, .deleteProject-box button, .logOutPopup-box button{
   margin-top: 3.125rem;
 }
 span{
@@ -125,7 +126,6 @@ span{
   font-style: italic;
   font-size: 0.938rem;
 }
-.deleteProject{
-  background: #000000;
-  opacity: 0.7;
+.deleteProject, .logOutPopup{
+  background-color: rgba(0,0,0,.7);
 }

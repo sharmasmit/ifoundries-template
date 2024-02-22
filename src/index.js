@@ -12,6 +12,7 @@ import LoginPage from "./components/LoginPage";
 import ForgotPassword from "./components/ForgotPassword";
 import SignupPage from "./components/SignupPage";
 import DeleteYourProjects from "./components/DeleteYourProjects";
+import LogOutPopup from "./components/LogOutPopup";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: "/DeleteYourProjects",
     element: <DeleteYourProjects />,
+  },
+  {
+    path: "/LogOutPopup",
+    element: <LogOutPopup />,
   },
 ]);
 
