@@ -20,15 +20,17 @@ function VerifyEmail() {
 
   return (
     <>
-      <div className="varify-Email">
+      <div className="varify-Email" style={{ padding: "13.875rem 35.625rem" }}>
         <div className="verifyEmail-box">
           <form onSubmit={EmailVarifyOTP}>
             <h1>Verify your email</h1>
             <h3>Please enter the number code sent to your email address.</h3>
+            <div className="otpContainer">
             <input type="text" maxLength={1} id="first" />
             <input type="text" maxLength={1} id="sec" />
             <input type="text" maxLength={1} id="third" />
             <input type="text" maxLength={1} id="fourth" /> <br />
+            </div>
             <button type="submit" className="resendBtn">
               Resend Code
             </button>

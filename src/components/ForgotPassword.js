@@ -1,7 +1,7 @@
 import React from "react";
 import LogoImage from "./LogoImage";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function ForgotPassword() {
   function showEmail(e) {
@@ -11,7 +11,7 @@ function ForgotPassword() {
     if(email === ''){
       alert("Email can't Be Blank");
     }
-  }
+  } 
 
   return (
     <>
@@ -24,7 +24,10 @@ function ForgotPassword() {
               Enter your email (that you use to create your
               <br /> account) to receive a Verification Code.
             </h3>
-            <input type="email" placeholder="youremail@gmail.com" />
+            <div className="input-container">
+              <input type="email" placeholder="youremail@gmail.com" />
+              <FontAwesomeIcon icon={faEnvelope} className="icon" />
+            </div>
             <br />
             <button type="submit">Continue</button>
           </form>
@@ -33,4 +36,5 @@ function ForgotPassword() {
     </>
   );
 }
+
 export default ForgotPassword;

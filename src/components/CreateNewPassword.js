@@ -31,28 +31,28 @@ function CreateNewPassword() {
 
   return (
     <>
-      <div className="create-pass">
+      <div className="create-pass" style={{ padding: "13.875rem 35.625rem" }}>
         <div className="create-pass-box">
           <form onSubmit={CreatePassword}>
             <h1>Create New Password</h1>
-            <h3>
+            <h3 style={{ paddingBottom: "0.938rem" }}>
               Your new password must be different from your previous <br /> used
               password. Minimum 6 characters
             </h3>
-            <input
-              type="password"
-              placeholder="Enter your password"
-              id="password"
-              minLength={6}
-            />
-            <br />
-            <input
-              type="password"
-              placeholder="Confirm Password"
-              id="confPassword"
-              minLength={6}
-            />
-            <br />
+              <input
+                type="password"
+                placeholder="Enter your password"
+                id="password"
+                minLength={6}
+              />
+              <br />
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                id="confPassword"
+                minLength={6}
+              />
+              <br />
             <button type="submit">Confirm</button>
           </form>
         </div>

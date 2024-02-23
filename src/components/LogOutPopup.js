@@ -3,8 +3,14 @@ import React from "react";
 function LogOutPopup() {
   return (
     <>
-      <div className="logOutPopup" style={{padding: "15.938rem 35.4rem"}}>
-        <div className="logOutPopup-box" style={{width: "100%", borderRadius: "3.125rem"}}>
+      <div
+        className="logOutPopup"
+        style={{ paddingTop: "15.938rem", paddingBottom: "15.938rem" }}
+      >
+        <div
+          className="logOutPopup-box"
+          style={{ width: "100%", borderRadius: "3.125rem" }}
+        >
           <form>
             <img src={require("../images/TrashBox.png")} alt="TrashBox" />
             <h1 style={{ paddingTop: "1.25rem" }}>Log Out</h1>
