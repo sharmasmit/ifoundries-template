@@ -14,6 +14,8 @@ import SignupPage from "./components/SignupPage";
 import DeleteYourProjects from "./components/DeleteYourProjects";
 import LogOutPopup from "./components/LogOutPopup";
 import NewProjectPage from "./components/NewProjectPage";
+import NewProjectDetails from "./components/NewProjectDetails";
+import AboutNewProject from "./components/AboutNewProject";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -58,6 +60,14 @@ const router = createBrowserRouter([
   {
     path: "/NewProject",
     element: <NewProjectPage />,
+  },
+  {
+    path: "/NewProjectDetails",
+    element: <NewProjectDetails />,
+  },
+  {
+    path: "/AboutProjectDetails",
+    element: <AboutNewProject />,
   },
 ]);
 

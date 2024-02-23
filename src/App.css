@@ -82,7 +82,7 @@ button{
   margin-top: 11.875rem;
   margin-right: 7.5rem;
   box-sizing: border-box;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .varify-Email, .create-pass, .reset-popup, .deleteProject, .logOutPopup{
@@ -119,10 +119,10 @@ button{
 .create-pass-box input, .login-box input, .signup-box input{
   margin: 0.938rem 0;
 }
-.create-pass-box h2, .login-box h2, .signup-box h2{
+.create-pass-box h3, .login-box h3, .signup-box h3{
   padding-bottom: 2.188rem;
 }
-.create-pass-box button, .login-box button , .signup-box button, .newProject-box button{
+.create-pass-box button, .login-box button , .signup-box button, .newProject-box button, .projectInnerBox button{
   margin-top:  2.188rem;
 }
 
@@ -155,11 +155,24 @@ span{
   align-items: center;
 }
 
-.newProject-Page{
+h2{
+  font-family: "Noto Sans";
+  font-size: 1.5rem;
+  margin-bottom: 2.188rem;
+}
+
+h4{
+  text-align: left;
+  font-size: 1.125rem;
+  font-family: "Noto Sans";
+  font-weight: 600;
+  margin-top: 0.938rem;
+}
+.newProject-Page, .projectDetails-page,.aboutNewProject {
   padding: 11.625rem 23.125rem;
   background-color: #F0F0F0;
 }
-.newProject-box{
+.newProject-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,35 +182,114 @@ span{
 
 .newProject-box input{
   width: 23.75rem;
+  font-size: 1rem;
+  padding-left: 2.5rem;
   margin-top: 0.625rem;
   margin-bottom: 0.938rem;
-}
-.newProject-cont h4{
-  text-align: left;
-  font-size: 1.125rem;
-  font-family: "Noto Sans";
-  font-weight: 600;
-  margin-top: 0.938rem;
 }
 .buttons{
   text-align: center;
 }
+
+.inputDiv{
+  position: relative;
+}
+.fixValue{
+  position: absolute;
+  top: 1.425rem;
+  left: 0.5rem;
+}
+
+.projectDetails-page, .aboutNewProject{
+  padding: 8.063rem 23.125rem;
+}
+.projectInnerBox{
+  padding: 3.125rem 2.5rem;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.625rem;
+}
+.projectFlexBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+/* NewProjectDetails.css */
+.styled-select select, input[type=button] {
+  /* Hide default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add custom arrow */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23292D35'%3E%3Cpath d='M5.6 7.6l4 4 4-4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.25rem top 50%; 
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+}
+
+.projectInnerBox select, input, textarea{
+  margin-top: 0.625rem;
+  margin-bottom: 0.938rem;
+  background-color: #F0F0F0;
+  border: none;
+  width: 21.625rem;
+  border-radius: 0.625rem;
+  outline: none;
+  padding: 0.875rem 1rem;
+}
+
+textarea{
+  padding: 0.875rem 1rem;
+  height: 10.188rem;
+}
+
+.card{
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+.dropDownBox{
+  position: relative;
+  display: inline-block;
+}
+.dropDown-containt{
+  display: none;
+  background-color: #F0F0F0;
+  position: absolute;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.dropDown-containt h5 {
+  padding: 1rem;
+  font-size: 1rem;
+}
+.dropDownBox:hover .dropDown-containt{
+  display: block;
+  cursor: pointer;
+}
+
+
 
 
 
 @media screen and (max-width: 1516px) {
 
   .varify-Email, .create-pass, .reset-popup, .deleteProject, .logOutPopup{
-    padding: 10rem 25rem;
+    padding: 8rem 25rem;
   }
 
   .logo{
     width: 12.5rem;
   }
-  /* .logo-bottom{
-    height: 31.25rem;
-    width: 31.25rem;
-  } */
+  .logo-bottom{
+    width: 100%;
+  }
   .newProject-Page{
     padding: 10.625rem 14.125rem;
   }
@@ -233,6 +325,14 @@ span{
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+
+  .varify-Email, .create-pass, .reset-popup, .deleteProject, .logOutPopup {
+    padding: 5rem 15rem;
+}
+.verifyEmail-box, .create-pass-box, .reset-popup-box, .deleteProject-box, .logOutPopup-box{
+  padding: 4rem 4rem;
+}
+
   .logo-bottom{
     margin-top: 7rem;
   }
@@ -244,14 +344,22 @@ span{
 
 
 @media screen and (max-width: 700px){
+
+  .varify-Email, .create-pass, .reset-popup, .deleteProject, .logOutPopup {
+    padding: 0;
+}
+.verifyEmail-box, .create-pass-box, .reset-popup-box, .deleteProject-box, .logOutPopup-box{
+  padding: 3.5rem 2rem;
+}
+
   .logo-bottom{
     margin-right: 0;
   }
   .logoImg{
-    padding: 3rem ;
+    padding: 3rem;
   }
   input{
-    width: 22.25rem;
+    width: 100%;
   }
   .forgot-box, .login-box, .signup-box {
     padding: 3.5rem;
@@ -262,9 +370,7 @@ span{
 }
 
 @media screen and (max-width: 500px){
-  /* .logo-bottom{
-    margin-right: 0;
-  } */
+
   h1{
     font-size: 2rem;
   }
@@ -274,7 +380,7 @@ span{
   input{
     margin: 1.12rem 0;
     padding: 0.7rem 1rem;
-    width: 19rem;
+
   }
   .logoImg{
     padding: 1.5rem ;
