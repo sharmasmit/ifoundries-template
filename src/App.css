@@ -61,7 +61,7 @@ button{
   margin: 0 0.938rem;
   cursor: pointer;
 }
-.forgot-page, .loginPage, .signupPage{
+.forgot-page, .loginPage, .signupPage, .changePass{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -98,7 +98,7 @@ button{
   padding: 13.875rem 35.625rem;
 }
 
-.verifyEmail-box, .create-pass-box, .reset-popup-box, .deleteProject-box, .logOutPopup-box{
+.verifyEmail-box, .create-pass-box, .reset-popup-box, .deleteProject-box, .logOutPopup-box, .changePass-inner{
   text-align: center;
   padding: 7.5rem 6.25rem;
   background-color: #FFFFFF;
@@ -127,7 +127,7 @@ button{
 .create-pass-box h3, .login-box h3, .signup-box h3{
   padding-bottom: 2.188rem;
 }
-.create-pass-box button, .login-box button , .signup-box button, .newProject-box button, .projectInnerBox button{
+.create-pass-box button, .login-box button , .signup-box button, .newProject-box button, .projectInnerBox button, .changePass-inner button{
   margin-top:  2.188rem;
 }
 
@@ -185,7 +185,7 @@ h4{
   background-color: #FFFFFF;
 }
 
-.newProject-box input{
+.newProject-box input , .changePass-inner input{
   width: 23.75rem;
   font-size: 1rem;
   padding-left: 2.5rem;
@@ -287,6 +287,7 @@ textarea{
   position: relative;
 }
 .leftSide-menu img{
+  width: 100%;
   padding: 5rem 3.125rem;
 }
 .leftSide-menu a{
@@ -311,7 +312,21 @@ h5{
   left: 1;
   width: 100%;
 }
+.changePass-box{
+  width: 80.725%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.changePass-inner input{
+  width: 36.25rem;
+  padding: 0.969rem 1rem;
+}
+.changePass-box{
+  background-color: #F0F0F0;
+  height: 67.5rem;
+}
 
 @media screen and (max-width: 1516px) {
 

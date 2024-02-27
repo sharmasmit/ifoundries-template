@@ -17,6 +17,7 @@ import NewProjectPage from "./components/NewProjectPage";
 import NewProjectDetails from "./components/NewProjectDetails";
 import AboutNewProject from "./components/AboutNewProject";
 import LeftSideMenu from "./components/LeftSideMenu";
+import ChangePassword from "./components/ChangePassword";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
@@ -71,8 +72,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/LeftSideMenu",
-    element: <LeftSideMenu/>
-  }
+    element: <LeftSideMenu />,
+  },
+  {
+    path: "/ChangePassword",
+    element: <ChangePassword />,
+  },
 ]);
 
 root.render(
