@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* h1 = 42px */
+/* h2 = 24px */
+/* h3 = 21px */
+/* h4 = 18px */
+/* h5 = 16px */
+
 *{
   margin: 0;
   padding: 0;
@@ -25,16 +31,15 @@ h3{
 }
 
 .input-container input {
-  padding-left: 30px; /* Adjust the padding to accommodate the icon */
+  padding-left: 30px;
 }
 
 .icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 10px; /* Adjust the left position of the icon */
+  left: 10px;
 }
-
 input{
   padding: 0.969rem 1rem;
   font-size: 0.875rem;
@@ -233,7 +238,7 @@ h4{
   font-size: 1rem;
 }
 
-.projectInnerBox select, input, textarea{
+.projectInnerBox select, .projectInnerBox input, .projectInnerBox textarea{
   margin-top: 0.625rem;
   margin-bottom: 0.938rem;
   background-color: #F0F0F0;
@@ -242,11 +247,12 @@ h4{
   border-radius: 0.625rem;
   outline: none;
   padding: 0.875rem 1rem;
+  font-size: 1rem;
 }
 
 textarea{
   padding: 0.875rem 1rem;
-  height: 10.188rem;
+  height: 9.5rem;
 }
 
 .card{
@@ -274,8 +280,37 @@ textarea{
   cursor: pointer;
 }
 
+.leftSide-menu{
+  background-color: #FFFFFF;
+  width: 19.275%;
+  height: 67.5rem;
+  position: relative;
+}
+.leftSide-menu img{
+  padding: 5rem 3.125rem;
+}
+.leftSide-menu a{
+  text-decoration: none;
+  color: #000000;
+}
+h5{
+  font-size: 1rem;
+  font-family: "Noto Sans";
+  padding: 1.875rem 3.125rem;
+  font-weight: 400;
+}
+.leftSide-menu h5:hover{
+  background-color: #FDE9E9;
+  color: #E82C25;
+}
 
-
+.menu-logOut{
+  position: absolute;
+  font-weight: bold;
+  bottom: 0;
+  left: 1;
+  width: 100%;
+}
 
 
 @media screen and (max-width: 1516px) {

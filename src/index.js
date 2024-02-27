@@ -16,7 +16,7 @@ import LogOutPopup from "./components/LogOutPopup";
 import NewProjectPage from "./components/NewProjectPage";
 import NewProjectDetails from "./components/NewProjectDetails";
 import AboutNewProject from "./components/AboutNewProject";
-
+import LeftSideMenu from "./components/LeftSideMenu";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
@@ -69,6 +69,10 @@ const router = createBrowserRouter([
     path: "/AboutProjectDetails",
     element: <AboutNewProject />,
   },
+  {
+    path: "/LeftSideMenu",
+    element: <LeftSideMenu/>
+  }
 ]);
 
 root.render(

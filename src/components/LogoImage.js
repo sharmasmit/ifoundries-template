@@ -6,7 +6,7 @@ function LogoImage() {
       <div className="logoImg">
         <div>
           <img
-            src={require("../images/ifoundries-logo 1.png")}
+            src={require("../images/ifoundries-logo-1.png")}
             alt="Logo"
             className="logo"
           ></img>

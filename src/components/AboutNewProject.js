@@ -2,15 +2,11 @@ import React, { useState } from "react";
 
 function AboutNewProject() {
   const [ipValue, setIpValue] = useState("");
-//   const [ipPlaceholder, setIpPlaceholder] = ("");
 
   function handleInputClick() {
     setIpValue("$ 90,000");
   }
 
-//   function handlePlaceholderClick() {
-//     setIpPlaceholder("ABC");
-//   }
   return (
     <>
       <div className="aboutNewProject">
@@ -23,8 +19,6 @@ function AboutNewProject() {
               <h4>Project Name</h4>
               <input
                 type="text"
-                // placeholder={ipPlaceholder}
-                // onClick={handlePlaceholderClick}
                 className="stateIP"
               />
 
