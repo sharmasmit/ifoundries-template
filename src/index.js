@@ -18,6 +18,8 @@ import NewProjectDetails from "./components/NewProjectDetails";
 import AboutNewProject from "./components/AboutNewProject";
 import LeftSideMenu from "./components/LeftSideMenu";
 import ChangePassword from "./components/ChangePassword";
+import AccountSettings from "./components/AccountSettings";
+import FilterByMenu from "./components/FilterByMenu";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
@@ -77,6 +79,14 @@ const router = createBrowserRouter([
   {
     path: "/ChangePassword",
     element: <ChangePassword />,
+  },
+  {
+    path: "/AccountSettings",
+    element: <AccountSettings />,
+  },
+  {
+    path: "FilterByMenu",
+    element: <FilterByMenu />,
   },
 ]);
 

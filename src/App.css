@@ -61,7 +61,7 @@ button{
   margin: 0 0.938rem;
   cursor: pointer;
 }
-.forgot-page, .loginPage, .signupPage, .changePass{
+.forgot-page, .loginPage, .signupPage, .changePass, .AcSettings-page{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -98,7 +98,7 @@ button{
   padding: 13.875rem 35.625rem;
 }
 
-.verifyEmail-box, .create-pass-box, .reset-popup-box, .deleteProject-box, .logOutPopup-box, .changePass-inner{
+.verifyEmail-box, .create-pass-box, .reset-popup-box, .deleteProject-box, .logOutPopup-box, .changePass-inner, .AcSettings-inner{
   text-align: center;
   padding: 7.5rem 6.25rem;
   background-color: #FFFFFF;
@@ -127,7 +127,7 @@ button{
 .create-pass-box h3, .login-box h3, .signup-box h3{
   padding-bottom: 2.188rem;
 }
-.create-pass-box button, .login-box button , .signup-box button, .newProject-box button, .projectInnerBox button, .changePass-inner button{
+.create-pass-box button, .login-box button , .signup-box button, .newProject-box button, .projectInnerBox button, .changePass-inner button, .AcSettings-inner button{
   margin-top:  2.188rem;
 }
 
@@ -143,14 +143,14 @@ span{
   color: #E72F27;
 }
 
-.forgotLink{
+.forgotLink, .input-container a{
   color: #E72F27;
   font-family: "Noto Sans";
   text-decoration: underline;
   font-style: italic;
   font-size: 0.938rem;
 }
-.deleteProject, .logOutPopup{
+.deleteProject, .logOutPopup, .filterBy-Main{
   background-color: rgba(0,0,0,.7);
 }
 .otpContainer{
@@ -185,7 +185,7 @@ h4{
   background-color: #FFFFFF;
 }
 
-.newProject-box input , .changePass-inner input{
+.newProject-box input , .changePass-inner input, .AcSettings-inner input{
   width: 23.75rem;
   font-size: 1rem;
   padding-left: 2.5rem;
@@ -217,15 +217,14 @@ h4{
   flex-direction: column;
   border-radius: 0.625rem;
 }
-.projectFlexBox{
+.projectFlexBox, .filterBy-Main{
   display: flex;
   justify-content: center;
   align-items: center;
   /* flex-wrap: wrap; */
 }
 
-/* NewProjectDetails.css */
-.styled-select select, input[type=button] {
+.styled-select select, input[type=button]{
   /* Hide default arrow */
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -312,20 +311,131 @@ h5{
   left: 1;
   width: 100%;
 }
-.changePass-box{
+.changePass-box, .AcSettings-box{
   width: 80.725%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.changePass-inner input{
+.changePass-inner input ,.AcSettings-inner input{
   width: 36.25rem;
   padding: 0.969rem 1rem;
 }
-.changePass-box{
+.changePass-box, .AcSettings-box{
   background-color: #F0F0F0;
   height: 67.5rem;
+}
+
+
+.input-container a{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.filterBy-menu{
+  float: right;
+  padding: 3.125rem;
+  width: 33.9%;
+  height: 67.5rem;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.blank{
+  width: 66.1%;
+  height: 67.5rem;
+}
+
+.label-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Noto Sans";
+}
+
+.label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkMark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 1px solid #AAAAAA;
+  border-radius: 0.375rem;
+  background-color: #fff; 
+}
+
+.label-container:hover input ~ .checkMark {
+  background-color: #ccc;
+}
+
+.label-container input:checked ~ .checkMark {
+  background-color: #e72f27;
+}
+
+.checkMark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.label-container input:checked ~ .checkMark:after {
+  display: block;
+}
+
+/* Style the checkmark icon */
+.label-container .checkMark:after {
+  left: 5px;
+  top: 0;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.selectBox button{
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23292D35'%3E%3Cpath d='M5.6 7.6l4 4 4-4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem top 50%; 
+  width: 100%;
+  text-align: start;
+  font-size: 1.125rem;
+  font-weight: 550;
+  border-radius: 0;
+  outline: none;
+  padding-left: 0;
+  margin: auto;
+  color: #000000;
+}
+
+#checkBoxes-1, #checkBoxes-2, #checkBoxes-3, #checkBoxes-4, #checkBoxes-5, #checkBoxes-6{
+  display: none;
+}
+.filterMenu-inner{
+  height: 49.563rem;
+  overflow: auto;
+}
+.filterMenu-inner::-webkit-scrollbar{
+  width: 0.313rem;
+  border-radius: 0.375rem;
+}
+.filterMenu-inner::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #E0E0E0;
+}
+.filterMenu-inner::-webkit-scrollbar-thumb{
+  background-color: #000000;
 }
 
 @media screen and (max-width: 1516px) {

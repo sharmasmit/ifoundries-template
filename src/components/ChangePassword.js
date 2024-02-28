@@ -8,7 +8,7 @@ function ChangePassword() {
         <LeftSideMenu className="menu-l" />
         <div className="changePass-box">
           <div className="changePass-inner">
-            <h1 style={{ textAlign: "center" }}>Change Password</h1>
+            <h1 style={{ textAlign: "center", marginBottom: "2.188rem" }}>Change Password</h1>
 
             <h4>Old Password <span>*</span></h4>
             <input type="password" id="old-password" />
