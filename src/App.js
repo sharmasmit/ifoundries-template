@@ -1,10 +1,10 @@
 import './App.css';
-import ForgotPassword from './components/ForgotPassword';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <ForgotPassword/>
+      <HomePage/>
     </div>
   );
 }

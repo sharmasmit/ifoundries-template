@@ -449,9 +449,10 @@ textarea{
 }
 .home-box{
   width: 80.725%;
+  background-color: #F0F0F0;
   padding: 5rem 6.25rem;
   height: 75.625rem;
-  background-color: #F0F0F0;
+  position: relative;
 }
 .small-box{
   width: 100%;
@@ -580,6 +581,13 @@ table select{
   color: #E72F27;
   background-color: #FFFFFF;
 }
+.upArrow-icon{
+  position: fixed;
+  font-size: 3rem;
+  right: 1.25rem;
+  bottom: 9.375rem;
+}
+
 
 @media screen and (max-width: 1516px) {
 

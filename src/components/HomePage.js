@@ -5,6 +5,7 @@ import {
   faMagnifyingGlass,
   faArrowLeft,
   faArrowRight,
+  faCircleUp,
 } from "@fortawesome/free-solid-svg-icons";
 
 function HomePage() {
@@ -292,6 +293,7 @@ function HomePage() {
               </button>
             </div>
           </div>
+          <FontAwesomeIcon icon={faCircleUp} className="upArrow-icon" />
         </div>
       </div>
     </>
