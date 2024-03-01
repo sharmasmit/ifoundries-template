@@ -5,6 +5,7 @@
 /* h3 = 21px */
 /* h4 = 18px */
 /* h5 = 16px */
+/* h6 = 14px */
 
 *{
   margin: 0;
@@ -17,6 +18,12 @@ h1{
   font-size: 2.625rem;
   font-family: "Noto Sans";
 }
+h2{
+  font-family: "Noto Sans";
+  font-size: 1.5rem;
+  margin-bottom: 2.188rem;
+}
+
 h3{
   padding-top: 1.25rem;
   font-family: "Noto Sans";
@@ -24,7 +31,23 @@ h3{
   font-size: 1.313rem;
   font-weight: 400;
 }
-
+h4{
+  text-align: left;
+  font-size: 1.125rem;
+  font-family: "Noto Sans";
+  font-weight: 600;
+  margin-top: 0.938rem;
+}
+h5{
+  font-size: 1rem;
+  font-family: "Noto Sans";
+  font-weight: 400;
+}
+h6{
+  font-size: 0.875rem;
+  font-family: "Noto Sans";
+  font-weight: 400;
+}
 
 .input-container {
   position: relative;
@@ -61,7 +84,7 @@ button{
   margin: 0 0.938rem;
   cursor: pointer;
 }
-.forgot-page, .loginPage, .signupPage, .changePass, .AcSettings-page{
+.forgot-page, .loginPage, .signupPage, .changePass, .AcSettings-page, .homePage{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -160,19 +183,7 @@ span{
   align-items: center;
 }
 
-h2{
-  font-family: "Noto Sans";
-  font-size: 1.5rem;
-  margin-bottom: 2.188rem;
-}
 
-h4{
-  text-align: left;
-  font-size: 1.125rem;
-  font-family: "Noto Sans";
-  font-weight: 600;
-  margin-top: 0.938rem;
-}
 .newProject-Page, .projectDetails-page,.aboutNewProject {
   padding: 11.625rem 23.125rem;
   background-color: #F0F0F0;
@@ -217,7 +228,7 @@ h4{
   flex-direction: column;
   border-radius: 0.625rem;
 }
-.projectFlexBox, .filterBy-Main{
+.projectFlexBox, .filterBy-Main, .small-box, .entries{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,11 +304,9 @@ textarea{
   text-decoration: none;
   color: #000000;
 }
-h5{
-  font-size: 1rem;
-  font-family: "Noto Sans";
+
+.leftSide-menu h5{
   padding: 1.875rem 3.125rem;
-  font-weight: 400;
 }
 .leftSide-menu h5:hover{
   background-color: #FDE9E9;
@@ -365,7 +374,7 @@ h5{
 
 .checkMark {
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
   height: 1.25rem;
   width: 1.25rem;
@@ -380,6 +389,7 @@ h5{
 
 .label-container input:checked ~ .checkMark {
   background-color: #e72f27;
+  border: 1px solid #e72f27;
 }
 
 .checkMark:after {
@@ -394,10 +404,10 @@ h5{
 
 /* Style the checkmark icon */
 .label-container .checkMark:after {
-  left: 5px;
+  left: 5.3px;
   top: 0;
-  width: 6px;
-  height: 12px;
+  width: 5px;
+  height: 11px;
   border: solid #fff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
@@ -436,6 +446,139 @@ h5{
 }
 .filterMenu-inner::-webkit-scrollbar-thumb{
   background-color: #000000;
+}
+.home-box{
+  width: 80.725%;
+  padding: 5rem 6.25rem;
+  height: 75.625rem;
+  background-color: #F0F0F0;
+}
+.small-box{
+  width: 100%;
+  padding: 1.875rem 0;
+  background-color: #FFFFFF;
+  border-radius: 0.625rem;
+}
+
+.smallBox-child{
+  padding: 0 1.875rem;
+  width: 100%;
+  height: auto;
+}
+.smallBox-child h5{
+  margin-top: 0.313rem;
+}
+.small-box h1{
+  margin-top: 1.25rem;
+}
+
+.crud-btn-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 1rem 1.875rem;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+.input-icon{
+  position: relative;
+}
+.input-icon .search{
+  position: absolute;
+  right: 0;
+  top: 0.3rem;
+  color: #F0F0F0;
+}
+.input-icon input{
+  margin: 0;
+  width: 20.063rem;
+  border-bottom: 1px solid #F0F0F0;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0 0.625rem 0.5rem 0.625rem;
+  color: #F0F0F0;
+}
+.input-icon input::placeholder{
+  color: #F0F0F0;
+}
+.crud-btns button{
+  background-color: transparent;
+  padding: 0 1.25rem;
+  margin: 0;
+  font-size: 1rem;
+}
+.delBtn{
+  border-radius: 0;
+  border-right: 1px solid #F0F0F0;
+  border-left: 1px solid #F0F0F0;
+}
+.large-box, .entries-next{
+  margin-top: 3.125rem;
+}
+
+th{
+  padding: 1.25rem 0;
+  background-color: #FFFFFF;
+  font-weight: 400;
+  font-family: "Noto sans";
+}
+
+table{
+  width: 100%;
+  color: #777777;
+  text-align: center;
+  background-color: #FFFFFF;
+  font-family: "Noto sans";
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+td{
+  padding: 1.6rem 1.25rem;
+}
+
+.table-head tr:nth-child(odd){
+  background-color: #F5F5F5;
+}
+table select{
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #777777;
+  font-family: "Noto sans";
+  outline: none;
+}
+.entries .selectBox button{
+  width: 7.5rem;
+  padding: 0.563rem 1.25rem;
+  margin-right: 0.938rem;
+  font-size: 1rem;
+  font-family: "Noto sans";
+  border-radius: 0.625rem;
+}
+.entries-next{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.next-prev button{
+  padding: 0.875rem;
+  border-radius: 0.313rem;
+}
+.activeBtn{
+  background-color: transparent;
+  color: #272932;
+  padding: 0.625rem 1rem;
+  margin: 0 0.313rem;
+}
+.next-prev button:hover{
+  background-color: #FFFFFF;
+  color: #E72F27;
+}
+.next-prev button.active{
+  color: #E72F27;
+  background-color: #FFFFFF;
 }
 
 @media screen and (max-width: 1516px) {

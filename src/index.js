@@ -20,6 +20,7 @@ import LeftSideMenu from "./components/LeftSideMenu";
 import ChangePassword from "./components/ChangePassword";
 import AccountSettings from "./components/AccountSettings";
 import FilterByMenu from "./components/FilterByMenu";
+import HomePage from "./components/HomePage";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
@@ -88,6 +89,10 @@ const router = createBrowserRouter([
     path: "FilterByMenu",
     element: <FilterByMenu />,
   },
+  {
+    path: "Home",
+    element: <HomePage/>
+  }
 ]);
 
 root.render(
