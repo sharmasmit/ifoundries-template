@@ -21,6 +21,7 @@ import ChangePassword from "./components/ChangePassword";
 import AccountSettings from "./components/AccountSettings";
 import FilterByMenu from "./components/FilterByMenu";
 import HomePage from "./components/HomePage";
+import ProjectInformation from "./components/ProjectInformation";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
@@ -91,8 +92,12 @@ const router = createBrowserRouter([
   },
   {
     path: "Home",
-    element: <HomePage/>
-  }
+    element: <HomePage />,
+  },
+  {
+    path: "ProjectInfo",
+    element: <ProjectInformation/>
+  },
 ]);
 
 root.render(

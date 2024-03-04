@@ -84,7 +84,7 @@ button{
   margin: 0 0.938rem;
   cursor: pointer;
 }
-.forgot-page, .loginPage, .signupPage, .changePass, .AcSettings-page, .homePage{
+.forgot-page, .loginPage, .signupPage, .changePass, .AcSettings-page, .homePage, .project-top-cont{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -153,6 +153,7 @@ button{
 .create-pass-box button, .login-box button , .signup-box button, .newProject-box button, .projectInnerBox button, .changePass-inner button, .AcSettings-inner button{
   margin-top:  2.188rem;
 }
+
 
 .reset-popup-box{
   padding-left: 5.938rem;
@@ -283,7 +284,6 @@ textarea{
 }
 .dropDown-containt h5 {
   padding: 1rem;
-  font-size: 1rem;
 }
 .dropDownBox:hover .dropDown-containt{
   display: block;
@@ -447,11 +447,11 @@ textarea{
 .filterMenu-inner::-webkit-scrollbar-thumb{
   background-color: #000000;
 }
-.home-box{
+.home-box, .projectInfo-box{
   width: 80.725%;
   background-color: #F0F0F0;
   padding: 5rem 6.25rem;
-  height: 75.625rem;
+  /* height: 75.625rem; */
   position: relative;
 }
 .small-box{
@@ -567,6 +567,9 @@ table select{
   padding: 0.875rem;
   border-radius: 0.313rem;
 }
+.projectInfo-box h4{
+  margin-top: 0;
+}
 .activeBtn{
   background-color: transparent;
   color: #272932;
@@ -587,6 +590,74 @@ table select{
   right: 1.25rem;
   bottom: 9.375rem;
 }
+
+.projectBox-inner{
+  width: 24.925%;
+  padding: 0.938rem;
+}
+.projectInfo-child1{
+  width: 75.9%;
+  background-color: #FFFFFF;
+  padding: 1.875rem 1.75rem;
+  border-radius: 0.625rem;
+}
+.projectInfo-box, .project-Bcont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project-Bcont .project-card{
+  width: 33.33%;
+  padding: 0.938rem;
+}
+.projectInfo-child2{
+  width: 18.8rem;
+}
+.project-top-cont{
+  margin-top: 0.938rem;
+}
+.project-top-cont, .project-bottom-cont{
+  border: 1px solid #CCCCCC;
+  border-radius: 0.625rem;
+  padding: 0.938rem;
+}
+.project-top-cont h4, .project-card h4, .projectInfo-box h2{
+  padding-bottom: 0.938rem;
+  margin: 0;
+}
+.client-details, .prices{
+  background-color: #FFFFFF;
+  width: 100%;
+  border-radius: 0.625rem;
+  padding: 1.875rem;
+  padding-bottom: 2.813rem;
+}
+.prices, .project-bottom-cont{
+  margin-top: 1.25rem;
+  padding-bottom: 4.375rem;
+}
+.prices{
+  padding-bottom: 11rem;
+}
+.projectInfo-child2 h5, .Bottom-card{
+  padding: 0.938rem 0;
+}
+.Bottom-card h4{
+  padding-top: 35px;
+} 
+.project-information{
+  display: flex;
+  justify-content: center;
+}
+
+.project-card h5{
+  padding: 0.313rem 0;
+}
+.Bottom-card h5{
+  padding: 0;
+}
+
 
 
 @media screen and (max-width: 1516px) {
