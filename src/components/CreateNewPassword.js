@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
 
 function CreateNewPassword() {
   function CreatePassword(e) {
@@ -39,20 +41,24 @@ function CreateNewPassword() {
               Your new password must be different from your previous <br /> used
               password. Minimum 6 characters
             </h3>
+            <div className="input-container">
             <input
               type="password"
               placeholder="Enter your password"
               id="password"
               minLength={6}
             />
-            <br />
+            <FontAwesomeIcon icon={faLock} className="icon" />
+            </div>
+            <div className="input-container">
             <input
               type="password"
               placeholder="Confirm Password"
               id="confPassword"
               minLength={6}
             />
-            <br />
+            <FontAwesomeIcon icon={faLock} className="icon" />
+            </div>
             <button type="submit">Confirm</button>
           </form>
         </div>

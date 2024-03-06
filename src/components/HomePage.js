@@ -1,5 +1,6 @@
 import React from "react";
 import LeftSideMenu from "./LeftSideMenu";
+import MobileSizeMenu from './MobileSizeMenu'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
@@ -12,8 +13,9 @@ function HomePage() {
   return (
     <>
       <div className="homePage">
-        <LeftSideMenu />
+        <LeftSideMenu className="menu-left" />
         <div className="home-box">
+          <MobileSizeMenu />
           <div className="small-box">
             <div
               className="smallBox-child"

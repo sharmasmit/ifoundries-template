@@ -1,15 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-function LeftSideMenu() {
+function MobileSizeMenu() {
+  let show = true;
+
+  function ShowMenu() {
+    const Icon = document.getElementById("menuBtn");
+
+    if (show) {
+      document.getElementById("mobileMenu-box").style.display = "block";
+      Icon.style.color = "#E72F27";
+      show = false;
+    } else {
+      document.getElementById("mobileMenu-box").style.display = "none";
+      Icon.style.color = "#000000";
+      show = true;
+    }
+  }
   return (
     <>
-      <div className="leftSide-menu">
+      <div style={{ marginBottom: "2rem" }} className="MobileMenu">
         <img
           src={require("../images/ifoundries-logo-1.png")}
-          alt="Logo"
           className="dashboard-logo"
+          alt="Logo"
         />
+        <button type="submit" onClick={ShowMenu} id="menuBtn">
+          <FontAwesomeIcon icon={faBars} />
+        </button>
+      </div>
+      <div id="mobileMenu-box">
         <h5>
           <Link to="#">
             <img
@@ -45,11 +67,18 @@ function LeftSideMenu() {
             Settings
           </Link>
         </h5>
-        <h5 className="menu-logOut">
-          <Link to="/LogOutPopup"> <img src={require("../images/Account-Logout-Icon.png")} alt="LogOutIcon" /> Log Out</Link>
+        <h5>
+          <Link to="/LogOutPopup">
+            {" "}
+            <img
+              src={require("../images/Account-Logout-Icon.png")}
+              alt="LogOutIcon"
+            />{" "}
+            Log Out
+          </Link>
         </h5>
       </div>
     </>
   );
 }
-export default LeftSideMenu;
+export default MobileSizeMenu;

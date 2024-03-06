@@ -5,7 +5,7 @@ function ChangePassword() {
   return (
     <>
       <div className="changePass">
-        <LeftSideMenu className="menu-l" />
+        <LeftSideMenu className="menu-left" />
         <div className="changePass-box">
           <div className="changePass-inner">
             <h1 style={{ textAlign: "center", marginBottom: "2.188rem" }}>Change Password</h1>

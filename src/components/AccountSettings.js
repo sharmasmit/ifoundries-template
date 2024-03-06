@@ -1,14 +1,17 @@
 import React from "react";
 import LeftSideMenu from "./LeftSideMenu";
 import { Link } from "react-router-dom";
+import MobileSizeMenu from "./MobileSizeMenu";
 
 function AccountSettings() {
   return (
     <>
       <div className="AcSettings-page">
-        <LeftSideMenu />
+        <LeftSideMenu className="menu-left" />
         <div className="AcSettings-box">
-          <div className="AcSettings-inner">
+          <MobileSizeMenu />
+
+          <div className="AcSettings-inner" style={{width: "100%"}}>
             <h1 style={{ textAlign: "center", marginBottom: "2.188rem" }}>
               Account Settings
             </h1>
@@ -35,9 +38,6 @@ function AccountSettings() {
             <input type="text" placeholder="Project Manager" />
 
             <div className="buttons">
-              <button type="submit" className="noBtn">
-                Back
-              </button>
               <button type="submit">Save Changes</button>
             </div>
           </div>

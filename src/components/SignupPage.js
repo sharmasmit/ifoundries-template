@@ -1,5 +1,7 @@
 import React from "react";
 import LogoImage from "./LogoImage";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
 
 function SignupPage() {
   function signupValidation(e) {
@@ -61,28 +63,40 @@ function SignupPage() {
               Login / <span>Sign Up</span>
             </h1>
             <h3>Welcome back, please log in.</h3>
-            <input type="text" placeholder="Your name" id="fullName" />
-            <br />
-            <input
-              type="email"
-              placeholder="Youremail@gmail.com"
-              id="emailId"
-            />
-            <br />
-            <input
-              type="password"
-              placeholder="Enter your password"
-              minLength={6}
-              id="password"
-            />
-            <br />
-            <input
-              type="password"
-              placeholder="Re-enter your password"
-              style={{ marginBottom: "1.25rem" }}
-              id="reEnterPass"
-            />
-            <br />
+            <div className="input-container">
+              <input type="text" placeholder="Your name" id="fullName" />
+              <FontAwesomeIcon icon={faEnvelope} className="icon" />
+            </div>
+            <div className="input-container">
+              <input
+                type="email"
+                placeholder="Youremail@gmail.com"
+                id="emailId"
+              />
+              <FontAwesomeIcon icon={faLock} className="icon" />
+            </div>
+            <div className="input-container">
+              <input
+                type="password"
+                placeholder="Enter your password"
+                minLength={6}
+                id="password"
+              />
+              <FontAwesomeIcon icon={faLock} className="icon" />
+            </div>
+            <div className="input-container">
+              <input
+                type="password"
+                placeholder="Re-enter your password"
+                style={{ marginBottom: "1.25rem" }}
+                id="reEnterPass"
+              />
+              <FontAwesomeIcon
+                icon={faLock}
+                className="icon"
+                style={{ top: "2.3rem" }}
+              />
+            </div>
             <button type="submit">Sign Up</button>
           </form>
         </div>

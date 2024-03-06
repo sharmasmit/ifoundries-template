@@ -22,6 +22,7 @@ import AccountSettings from "./components/AccountSettings";
 import FilterByMenu from "./components/FilterByMenu";
 import HomePage from "./components/HomePage";
 import ProjectInformation from "./components/ProjectInformation";
+import MobileSizeMenu from "./components/MobileSizeMenu";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const router = createBrowserRouter([
@@ -96,7 +97,11 @@ const router = createBrowserRouter([
   },
   {
     path: "ProjectInfo",
-    element: <ProjectInformation/>
+    element: <ProjectInformation />,
+  },
+  {
+    path: "MobileMenu",
+    element: <MobileSizeMenu />,
   },
 ]);
 
